@@ -1,0 +1,243 @@
+{
+	"info": {
+		"_postman_id": "b3a8373b-ba9e-40e6-beca-6c8fc2788b47",
+		"name": "ProjetoEntrevista",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PessoaFisica",
+			"item": [
+				{
+					"name": "UsuariosPfListar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/UsuarioPf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"UsuarioPf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UsuarioPfListarPorCpf",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/UsuarioPf/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"UsuarioPf",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UsuarioPfCadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n   \"nomeUsuario\": \"Carlos\",\r\n        \"idTipo\": 2,\r\n        \"numeroCpf\": 222,\r\n        \"telefone\": 11223334\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/UsuarioPf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"UsuarioPf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UsuarioPfAlterar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \r\n    \"NomeUsuario\" : \"Muliro\",\r\n    \"IdTipo\" : 2,\r\n    \"NumeroCpf\" :123,\r\n    \"Telefone\": 12345\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/UsuarioPf/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"UsuarioPf",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "PessoaJuridica",
+			"item": [
+				{
+					"name": "UsuarioPjListar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/UsuarioPj",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"UsuarioPj"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UsuarioPjListarPorCpf",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/UsuarioPj/123",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"UsuarioPj",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UsuarioPjCadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomeUsuario\": \"Claudio\",\r\n        \"idTipo\": 1,\r\n        \"numeroCnpj\": 111,\r\n        \"telefone\": 11223334\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/UsuarioPj",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"UsuarioPj"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UsuarioPjDeletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/UsuarioPj/123",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"UsuarioPj",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UsuarioPjAlterar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/UsuarioPf/123",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"UsuarioPf",
+								"123"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
